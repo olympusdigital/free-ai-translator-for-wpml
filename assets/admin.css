@@ -1,0 +1,271 @@
+.fatw-subtitle {
+	font-size: 14px;
+	font-weight: 400;
+	color: #646970;
+	margin-left: 8px;
+}
+
+.fatw-intro {
+	max-width: 720px;
+	color: #50575e;
+}
+
+.fatw-panel {
+	max-width: 1040px;
+	margin-top: 12px;
+}
+
+/* ------------------------------------------------------------- toolbar */
+
+.fatw-type-filter {
+	margin: 12px 0;
+}
+
+.fatw-toolbar {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin: 12px 0;
+	flex-wrap: wrap;
+}
+
+.fatw-toolbar-actions {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+#fatw-filter {
+	min-width: 220px;
+}
+
+#fatw-selected-count {
+	color: #646970;
+}
+
+/* --------------------------------------------------------------- table */
+
+#fatw-table .fatw-col-check {
+	width: 32px;
+}
+
+#fatw-table .fatw-col-status {
+	width: 300px;
+}
+
+.fatw-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	line-height: 1.6;
+	margin-right: 6px;
+}
+
+.fatw-badge.is-none {
+	background: #f0f0f1;
+	color: #50575e;
+}
+
+.fatw-badge.is-draft {
+	background: #fcf9e8;
+	color: #996800;
+	border: 1px solid #f0e6bb;
+}
+
+.fatw-badge.is-live {
+	background: #edfaef;
+	color: #007017;
+	border: 1px solid #c6e8ca;
+}
+
+/* ------------------------------------------------------------- preview */
+
+.fatw-preview-table {
+	margin-bottom: 8px;
+}
+
+.fatw-preview-table th:not( :first-child ),
+.fatw-preview-table td:not( :first-child ) {
+	text-align: right;
+	width: 120px;
+}
+
+#fatw-preview-result {
+	margin: 12px 0 20px;
+}
+
+/* ------------------------------------------------------------ progress */
+
+#fatw-progress {
+	margin: 12px 0 20px;
+	max-width: 640px;
+}
+
+.fatw-progress-bar {
+	background: #e5e5e5;
+	border-radius: 3px;
+	height: 8px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+#fatw-progress-fill {
+	background: #2271b1;
+	height: 100%;
+	width: 0;
+	transition: width 0.3s ease;
+}
+
+#fatw-progress-log {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+}
+
+#fatw-progress-log li {
+	padding: 2px 0;
+}
+
+#fatw-progress-log li.is-error {
+	color: #a00;
+}
+
+#fatw-progress-log li.is-summary {
+	font-weight: 600;
+	padding-top: 6px;
+}
+
+/* ------------------------------------------------------------- history */
+
+.fatw-history-stats {
+	display: flex;
+	gap: 40px;
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	padding: 16px 20px;
+	margin-bottom: 20px;
+}
+
+.fatw-stat {
+	display: flex;
+	flex-direction: column;
+}
+
+.fatw-stat-num {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.fatw-stat-label {
+	font-size: 12px;
+	color: #646970;
+}
+
+@media ( max-width: 782px ) {
+	.fatw-toolbar-actions {
+		margin-left: 0;
+	}
+	.fatw-history-stats {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+}
+
+/* -------------------------------------------------------- lang picker */
+
+.fatw-lang-picker {
+	margin: 16px 0 4px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.fatw-lang-picker select {
+	min-width: 220px;
+}
+
+/* ------------------------------------------------------------- donate */
+
+.fatw-donate {
+	margin-top: 32px;
+	padding: 16px 20px;
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-left: 4px solid #2271b1;
+	border-radius: 4px;
+	max-width: 640px;
+}
+
+.fatw-donate h3 {
+	margin-top: 0;
+}
+
+/* ---------------------------------------------------------- key guide */
+
+.fatw-key-guide {
+	margin: 10px 0;
+	padding: 12px 16px;
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	max-width: 560px;
+}
+
+.fatw-key-guide ol {
+	margin: 8px 0 8px 20px;
+}
+
+
+.fatw-badge.is-builder {
+	background: #f0f0f1;
+	color: #646970;
+	border: 1px dashed #c3c4c7;
+	cursor: help;
+}
+
+/* --------------------------------------------------------------- logo */
+
+.fatw-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.fatw-logo {
+	border-radius: 8px;
+}
+
+/* ------------------------------------------------------- donate popup */
+
+#fatw-donate-overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.55);
+	z-index: 100100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.fatw-donate-popup {
+	background: #fff;
+	border-radius: 8px;
+	padding: 28px 32px;
+	max-width: 440px;
+	width: calc(100% - 40px);
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+
+.fatw-donate-popup h2 {
+	margin: 0 0 10px;
+}
+
+.fatw-donate-popup-actions {
+	margin: 18px 0 0;
+}

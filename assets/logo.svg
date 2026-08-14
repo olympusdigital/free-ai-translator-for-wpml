@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Free AI Translator for WPML">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2271b1"/>
+      <stop offset="1" stop-color="#135e96"/>
+    </linearGradient>
+  </defs>
+  <!-- rounded square background -->
+  <rect x="8" y="8" width="240" height="240" rx="48" fill="url(#bg)"/>
+  <!-- left speech bubble: source language "A" -->
+  <g>
+    <rect x="36" y="56" width="96" height="80" rx="18" fill="#ffffff"/>
+    <path d="M60 136 L60 160 L84 136 Z" fill="#ffffff"/>
+    <text x="84" y="114" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#135e96" text-anchor="middle">A</text>
+  </g>
+  <!-- right speech bubble: target language "文" (rendered by the viewer's own fonts) -->
+  <g>
+    <rect x="124" y="120" width="96" height="80" rx="18" fill="#9ec2e6"/>
+    <path d="M196 200 L196 224 L172 200 Z" fill="#9ec2e6"/>
+    <text x="172" y="178" font-family="'Hiragino Sans','Noto Sans CJK SC','Microsoft YaHei',sans-serif" font-size="50" font-weight="bold" fill="#0a3a5c" text-anchor="middle">文</text>
+  </g>
+  <!-- AI spark, top right -->
+  <path d="M196 34 l7 18 18 7 -18 7 -7 18 -7 -18 -18 -7 18 -7 Z" fill="#f0c33c"/>
+  <path d="M226 74 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 Z" fill="#f0c33c" opacity="0.85"/>
+</svg>
